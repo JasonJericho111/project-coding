@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Welcome to the CRUD Application</h1>
+    <p>Hello, {{ current_user.id }}! You are logged in.</p>
+    <a href="/items" class="btn btn-primary">Go to Items</a>
+</div>
+{% endblock %}

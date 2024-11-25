@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD Flask</title>
+</head>
+<body>
+    <h1>Items</h1>
+    <a href="/add">Add Item</a>
+    <ul>
+        {% for item in items %}
+            <li>{{ item[1] }} <a href="/edit/{{ item[0] }}">Edit</a> <a href="/delete/{{ item[0] }}">Delete</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
